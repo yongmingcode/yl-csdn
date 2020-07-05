@@ -4,6 +4,9 @@
 # 运行方式
 
 1.执行pack_project.sh 文件进行项目打包
+
 2.运行&停止项目：
+
   2.1 windows环境下，执行win_start_stop.sh脚本
+  
   2.2 linux环境下，执行linux_start_stop.sh脚本
