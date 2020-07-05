@@ -35,7 +35,7 @@ public class JavaInfoController {
 
         modelAndView.addObject("cookies", cookies);
         modelAndView.addObject("header", map);
-        modelAndView.setViewName("freemarker");
+        modelAndView.setViewName("ylCsdnMonitor");
         return modelAndView;
     }
 
@@ -62,7 +62,7 @@ public class JavaInfoController {
             Map<String, Object> threadMap = new HashMap<String, Object>();
             threadMap.put("threadName", threadInfo.getThreadName());
             threadMap.put("threadState", threadInfo.getThreadState());
-            threadMap.put("cpuTime", String.format("CPU time: %s ns", threadMXBean.getThreadCpuTime(threadID)));
+            threadMap.put("cpuTime", String.format("%s ns", threadMXBean.getThreadCpuTime(threadID)));
             threadResult.add(threadMap);
         }
         result.add(threadResult);
